@@ -29,5 +29,9 @@ profile home-assistant-streamdeck-yaml flags=(attach_disconnected,mediate_delete
 /dev/bus/usb/** rw,
 /run/udev/** r,
 /sys/bus/usb/** r,
+/sys/bus/usb/devices/** rw,
+/sys/bus/usb/drivers/usb/unbind w,
+/sys/bus/usb/drivers/usb/bind w,
+capability sys_admin,
 capability sys_rawio,
 }
