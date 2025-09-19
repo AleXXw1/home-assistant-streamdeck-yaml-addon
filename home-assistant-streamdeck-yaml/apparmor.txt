@@ -24,8 +24,10 @@ profile home-assistant-streamdeck-yaml flags=(attach_disconnected,mediate_delete
   /data/** rw,
   /config/** rw,
 
-  /dev/hidraw* rw,
-  /dev/bus/usb/** rw,
-  /run/udev/** r,
-  capability sys_rawio,
+/dev/hidraw* rw,
+/dev/usb/hiddev* rw,
+/dev/bus/usb/** rw,
+/run/udev/** r,
+/sys/bus/usb/** r,
+capability sys_rawio,
 }
