@@ -1,6 +1,6 @@
 ---
 name: Home Assistant Stream Deck
-version: "2025.7.1.1"
+version: "2025.7.1.2"
 slug: home-assistant-streamdeck-yaml
 description: >
   This add-on allows you to control your Home Assistant
@@ -36,6 +36,7 @@ usb: true
 udev: true
 privileged:
   - SYS_RAWIO
+  - SYS_ADMIN
 devices:
   - /dev/bus/usb
 map:
